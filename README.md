@@ -1,24 +1,19 @@
-# CryptoRandom
+# Bro_Pay
 
 Version 
 1.0
 
 DESCRIPTION:
 
-	A library that encrypts files and texts that you enter with a random key, which is the same key that decrypts
+	This tool creates a file in PHP and through this file remote control is controlled by the command of the system and the connection to the server or this file through the tool Bro_Pay 
     
-What types of encryption are used?
-
-	1- MonoAlphaBetic
-
-	2- ARC4
+What is distinctive about this tool?
+	
+	You make a cipher for commands that correspond to the GET variable and can execute more than one thing at the same time
 
 What is the next update (Version 2.0)?
 
-    Adding the possibility of encryption through:
-        1- AES
-        2- DES
-    Encrypt and hide files:
-        Is a feature through which files can be encrypted and hidden after encryption and can only be shown after entering the  encryption key
+	1. Use a user name and a secret number to connect to the server
+	2- Selecting a group of IP addresses allowed to connect to the server
         
    More updates will be available in version 3.0
