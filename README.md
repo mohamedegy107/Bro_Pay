@@ -14,6 +14,7 @@ What is distinctive about this tool?
 Fix Version(1.1):
 
 	The problem of system commands was solved with Linux's special platform
+	The problem of netstat was solved.
 
 What is the next update (Version 2.0)?
 
