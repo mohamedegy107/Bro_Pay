@@ -1,7 +1,7 @@
 # Bro_Pay
 
 Version 
-1.0
+1.1
 
 DESCRIPTION:
 
@@ -10,6 +10,10 @@ DESCRIPTION:
 What is distinctive about this tool?
 	
 	You make a cipher for commands that correspond to the GET variable and can execute more than one thing at the same time
+
+Fix Version(1.1):
+
+	The problem of system commands was solved with Linux's special platform
 
 What is the next update (Version 2.0)?
 
